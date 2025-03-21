@@ -22,14 +22,14 @@ public class TesteLivro {
         meuLivro.editora = rocco;
         meuLivro.preço = 30;
         meuLivro.paginas = 88;
-        meuLivro.tipoCapa = TipoCapaEnum.DURA;
+        //meuLivro.tipoCapa = TipoCapaEnum.DURA;
         meuLivro.resumos = "Macabéa, uma jovem nordestina ingenua, vive uma vida simples e miserável no Rio de Janeiro. " +
                 "Sem perceber sua própria condição, enfrenta rejeições e dificuldades até que uma cartomante lhe promete" +
                 "um futuro brilhante-mas o destino lhe reserva um fim trágico ";
 
         meuLivro.exibirLivro();
         //---------------------------
-        Livro livro = new Livro();
+        Livro livro = new Livro(rocco);
         System.out.println("Informe o titulo do livro");
         meuLivro.titulo = entrada.nextLine();
 

@@ -8,6 +8,15 @@ public class Livro {
     String resumos;
     TipoCapaEnum tipoCapa; //COMUM, DURA, PERSONALIZADA
 
+    //Construtor
+    public Livro(){
+        tipoCapa = TipoCapaEnum.COMUM;
+    }
+    public  Livro(Editora editora){
+        this.editora = editora;
+        tipoCapa = TipoCapaEnum.COMUM;
+    }
+
 
     public void exibirLivro(){
         System.out.println("Livro:" + titulo);
