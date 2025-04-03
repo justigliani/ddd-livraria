@@ -1,17 +1,17 @@
-import java.sql.SQLOutput;
+package br.com.fiap.models;
 
 public class Receita {
-    String nomeReceita;
-    String cozinheira;
-    String dificuldade;
-    int tempoPreparo;
-    int porçoes;
-    String descriçao;
-    String ingredientes;
-    String modoPreparo;
+   public String nomeReceita;
+   public String cozinheira;
+   public String dificuldade;
+   public int tempoPreparo;
+   public int porçoes;
+   public String descriçao;
+   public String ingredientes;
+   public String modoPreparo;
 
     public void exibirReceita(){
-        System.out.println("Receita de " + nomeReceita);
+        System.out.println("br.com.fiap.models.Receita de " + nomeReceita);
         System.out.println("===========================");
         System.out.println("Publicador por: " + cozinheira);
         System.out.println(dificuldade + "\t" + tempoPreparo + "\t" + porçoes);
@@ -22,7 +22,7 @@ public class Receita {
 
     //Metodo com retorno
     public String exigirReceita2(){
-        String mensagem = "Receita de" + nomeReceita +
+        String mensagem = "br.com.fiap.models.Receita de" + nomeReceita +
                 "\n===========================" +
                 "\n Publicador por: \" + cozinheira" +
                 "\n dificuldade + \"\\t\" + tempoPreparo + \"\\t\" + porçoes" +

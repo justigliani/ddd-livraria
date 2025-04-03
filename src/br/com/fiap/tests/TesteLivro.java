@@ -1,4 +1,9 @@
-import java.util.Random;
+package br.com.fiap.tests;
+
+import br.com.fiap.enums.TipoCapaEnum;
+import br.com.fiap.models.Editora;
+import br.com.fiap.models.Livro;
+
 import java.util.Scanner;
 
 public class TesteLivro {
@@ -7,7 +12,7 @@ public class TesteLivro {
         Scanner leitorNumerico = new Scanner(System.in);;
 
 
-        //Criando um objeto do tipo Editora chamado rocco
+        //Criando um objeto do tipo br.com.fiap.models.Editora chamado rocco
         Editora rocco = new Editora();
         rocco.nome = "Rocco";
         rocco.site = "www.rocco.com";
@@ -22,7 +27,7 @@ public class TesteLivro {
         meuLivro.editora = rocco;
         meuLivro.preço = 30;
         meuLivro.paginas = 88;
-        //meuLivro.tipoCapa = TipoCapaEnum.DURA;
+        //meuLivro.tipoCapa = br.com.fiap.enums.TipoCapaEnum.DURA;
         meuLivro.resumos = "Macabéa, uma jovem nordestina ingenua, vive uma vida simples e miserável no Rio de Janeiro. " +
                 "Sem perceber sua própria condição, enfrenta rejeições e dificuldades até que uma cartomante lhe promete" +
                 "um futuro brilhante-mas o destino lhe reserva um fim trágico ";

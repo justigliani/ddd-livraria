@@ -1,4 +1,6 @@
-import java.sql.SQLOutput;
+package br.com.fiap.tests;
+
+import br.com.fiap.models.Receita;
 
 public class TesteReceita {
     public static void main(String[] args) {
