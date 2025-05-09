@@ -1,8 +1,9 @@
 package br.com.fiap.models;
 
 import br.com.fiap.enums.TipoCapaEnum;
+import br.com.fiap.interfaces.Exemplar;
 
-public class Livro {
+public class Livro implements Exemplar {
     //Atributo tipo nomeAtributo;
     private String titulo;
     private String autor;
